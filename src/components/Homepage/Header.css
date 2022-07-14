@@ -1,0 +1,34 @@
+a {
+  color: var(--primary-violet-color);
+  font-family: "Kalam", cursive;
+  font-size: 20px;
+  text-decoration: none;
+}
+.navbar {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  box-shadow: 0px 4px 20px var(--primary-grey-color);
+}
+.navbar-logo {
+  font-family: "Kalam", cursive;
+  font-size: 32px;
+  color: var(--primary-violet-color);
+}
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.navbar-login-btn {
+  font-family: "Kalam", cursive;
+  font-size: 20px;
+  border: none;
+  width: 124px;
+  border-radius: 16px;
+  background-color: var(--primary-black-color);
+  color: var(--primary-white-color);
+}
