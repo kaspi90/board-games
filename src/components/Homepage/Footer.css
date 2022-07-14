@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  height: 250px;
+  background-color: var(--primary-violet-color);
+}
+.twitter,
+.github,
+.facebook {
+  color: var(--primary-white-color);
+}
