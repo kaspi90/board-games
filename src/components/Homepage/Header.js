@@ -1,11 +1,14 @@
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
   return (
     <nav className="navbar">
-      <h1 className="navbar-logo">Board Games</h1>
+      <Link to="/">
+        <h1 className="navbar-logo">Hottest Board Games</h1>
+      </Link>
       <div className="navbar-links">
-        <a href="">Board Games</a>
+        <Link to="/boardgames">Board Games</Link>
         <a href="">About</a>
         <button className="navbar-login-btn">Login</button>
       </div>

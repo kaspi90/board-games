@@ -1,0 +1,5 @@
+.main-section-games {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+}
