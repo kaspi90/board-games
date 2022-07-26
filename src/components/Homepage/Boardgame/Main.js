@@ -4,9 +4,6 @@ import "./Main.css";
 function MainGame(props) {
   const text = props.game.description?._text;
   console.log(text);
-  if (text !== undefined) {
-    const description = text.replace(/&#10;&#10;/g, " ");
-  }
 
   return (
     <div className="main-container-games">
@@ -36,7 +33,7 @@ function MainGame(props) {
       </div>
 
       <p className="boardgame-description">
-        {text !== undefined && text.replace(/&#10;&#10;|&mdash;/g, " ")}{" "}
+        {text !== undefined ? text.replace(/&#10;&#10;|&mdash;/g, " ") : ""}
       </p>
     </div>
   );

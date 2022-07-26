@@ -4,8 +4,12 @@ import { Link } from "react-router-dom";
 function Games(props) {
   return (
     <Link to="/boardgames">
-      <div className="boardgame-container">
-        <h1 className="boardgame-name">
+      <div
+        className="boardgame-container"
+        onClick={props.onclick}
+        id={props.boardgames._attributes.id}
+      >
+        <h1 className="boardgame-name" id={props.boardgames._attributes.id}>
           {props.boardgames.name._attributes.value}
         </h1>
         <p className="boardgame-year">
@@ -13,6 +17,7 @@ function Games(props) {
         </p>
         <img
           className="boardgame-image"
+          id={props.boardgames._attributes.id}
           src={props.boardgames.thumbnail?._attributes.value}
         ></img>
       </div>
