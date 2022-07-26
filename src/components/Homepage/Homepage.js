@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Games from "./Boardgame";
 import "./Homepage.css";
 import axios from "axios";

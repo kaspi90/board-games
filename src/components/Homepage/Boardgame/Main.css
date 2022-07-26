@@ -1,5 +1,31 @@
+p {
+  font-family: "Kalam", cursive;
+  font-size: 18px;
+}
 .main-container-games {
   box-shadow: 0px 4px 20px var(--primary-grey-color);
   width: 80%;
+  min-height: 500px;
   margin-top: 16px;
+  padding: 24px;
+}
+.boardgame-information {
+  display: flex;
+  gap: 24px;
+}
+.boardgame-image {
+  height: 175px;
+  object-fit: cover;
+}
+.boardgame-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-games-name {
+  margin: 0;
+  font-family: "Kalam", cursive;
+}
+.main-games-year {
+  margin: 0 0 24px 0;
 }
