@@ -12,6 +12,7 @@ p {
 }
 .boardgame-information {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 .boardgame-image {

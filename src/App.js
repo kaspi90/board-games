@@ -1,9 +1,9 @@
 import "./App.css";
 import Homepage from "./components/Homepage/Homepage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Boardgames from "./components/Homepage/Boardgame/Games";
-import Header from "./components/Homepage/Header";
-import Footer from "./components/Homepage/Footer";
+import Boardgames from "./components/Games/Games";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (

@@ -1,8 +1,7 @@
 import React from "react";
-import Games from "./Boardgame";
 import "./Homepage.css";
 import axios from "axios";
-import Boardgames from "./Boardgame/Games";
+import Games from "../Boardgame/Boardgame";
 
 const convert = require("xml-js");
 
@@ -35,7 +34,6 @@ function Homepage() {
             boardgames={gamesObject}
           />
         ))}
-        #{" "}
       </div>
     </div>
   );

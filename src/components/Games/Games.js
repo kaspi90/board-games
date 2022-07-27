@@ -1,9 +1,9 @@
-import MainGame from "./Main";
 import "./Games.css";
-import Search from "./Search";
+
 import React from "react";
 import axios from "axios";
-import Games from "../Boardgame";
+import Search from "../Search/Search";
+import MainGame from "../Main/Main";
 const convert = require("xml-js");
 
 function Boardgames() {
