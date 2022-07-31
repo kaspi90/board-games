@@ -1,7 +1,7 @@
 import React from "react";
-import "./Main.css";
+import "./BoardgameCard.css";
 
-function MainGame(props) {
+function BoardgameCard(props) {
   const text = props.game.description?._text;
   console.log(text);
 
@@ -33,10 +33,10 @@ function MainGame(props) {
       </div>
 
       <p className="boardgame-description">
-        {text !== undefined ? text.replace(/&#10;&#10;|&mdash;/g, " ") : ""}
+        {text !== undefined ? text.replace(/&#10;|&mdash;|#15/g, " ") : ""}
       </p>
     </div>
   );
 }
 
-export default MainGame;
+export default BoardgameCard;

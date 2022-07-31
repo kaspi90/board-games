@@ -1,16 +1,26 @@
-import "./Games.css";
-
+import "./GamesSearch.css";
+import { useParams } from "react-router-dom";
 import React from "react";
 import axios from "axios";
 import Search from "../Search/Search";
-import MainGame from "../Main/Main";
+import BoardgameCard from "../BoardgameCard/BoardgameCard";
 const convert = require("xml-js");
 
-function Boardgames() {
+function GamesSearch() {
   const [gameName, setInput] = React.useState("");
   const [games, setBoardgames] = React.useState([]);
   const [id, setId] = React.useState([]);
   const [selects, setSelects] = React.useState([]);
+  let urlParamId = useParams().id;
+
+  React.useEffect(() => {
+    console.log("urlParamId: ", urlParamId);
+    if (urlParamId !== undefined) {
+      fetchgames(urlParamId);
+      document.querySelector(".main-container-games").style.display = "block";
+    }
+  }, [urlParamId]);
+
   React.useEffect(() => {
     if (gameName.length > 0) {
       fetchid(gameName);
@@ -82,9 +92,9 @@ function Boardgames() {
           )}
         </select>
       </div>
-      <MainGame game={games} />
+      <BoardgameCard game={games} />
     </div>
   );
 }
 
-export default Boardgames;
+export default GamesSearch;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Homepage.css";
 import axios from "axios";
-import Games from "../Boardgame/Boardgame";
+import BoardgameHot from "../BoardgameHot/BoardgameHot";
 
 const convert = require("xml-js");
 
@@ -27,7 +27,7 @@ function Homepage() {
       <h1 className="main-section-header">What's hot</h1>
       <div className="main-section">
         {bgames.map((gamesObject) => (
-          <Games
+          <BoardgameHot
             onclick={handleClick}
             data-index={gamesObject._attributes.id}
             key={gamesObject._attributes.id}

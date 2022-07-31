@@ -1,9 +1,9 @@
-import "./Boardgame.css";
+import "./BoardgameHot.css";
 import { Link } from "react-router-dom";
 
-function Games(props) {
+function BoardgameHot(props) {
   return (
-    <Link to="/boardgames">
+    <Link to={`/boardgames/${props.boardgames._attributes.id}`}>
       <div
         className="boardgame-container"
         onClick={props.onclick}
@@ -24,4 +24,4 @@ function Games(props) {
     </Link>
   );
 }
-export default Games;
+export default BoardgameHot;
