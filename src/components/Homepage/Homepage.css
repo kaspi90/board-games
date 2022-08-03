@@ -4,3 +4,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.main-section-header {
+  font-family: "Kalam", cursive;
+  font-size: 32px;
+  margin: 16px 0 0 0;
+}
