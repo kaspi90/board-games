@@ -1,0 +1,39 @@
+.login-container {
+  color: var(--primary-violet-color);
+  font-family: "Kalam", cursive;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 20px var(--primary-grey-color);
+  width: 100%;
+  min-height: 500px;
+  gap: 24px;
+  padding-bottom: 24px;
+  margin-top: 16px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.login-email,
+.login-password {
+  font-family: "Kalam", cursive;
+  padding: 8px;
+  width: 100%;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-violet-color);
+}
+.login-submit {
+  font-family: "Kalam", cursive;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}

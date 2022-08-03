@@ -9,8 +9,10 @@ function Header() {
       </Link>
       <div className="navbar-links">
         <Link to="/boardgames">Board Game Search</Link>
-        <Link to="/Contact">Contact</Link>
-        <button className="navbar-login-btn">Login</button>
+        <Link to="/contact">Contact</Link>
+        <Link to="/login">
+          <button className="navbar-login-btn">Login</button>
+        </Link>
       </div>
     </nav>
   );

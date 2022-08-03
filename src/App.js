@@ -5,6 +5,7 @@ import GamesSearch from "./components/GamesSearch/GamesSearch";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
+import Login from "./components/Login/Login";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/boardgames" element={<GamesSearch />} />
           <Route path="/boardgames/:id" element={<GamesSearch />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </div>
