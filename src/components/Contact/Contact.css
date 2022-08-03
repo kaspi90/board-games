@@ -1,0 +1,60 @@
+.contact-container {
+  color: var(--primary-violet-color);
+  font-family: "Kalam", cursive;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 20px var(--primary-grey-color);
+  width: 100%;
+  min-height: 500px;
+  gap: 24px;
+  padding-bottom: 24px;
+  margin-top: 16px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 56%;
+}
+.contact-names {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.contact-first-name,
+.contact-last-name {
+  margin: 0;
+  font-family: "Kalam", cursive;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-violet-color);
+}
+.contact-message {
+  font-family: "Kalam", cursive;
+  width: 100%;
+  border-radius: 8px;
+  min-height: 250px;
+  border: 1px solid var(--primary-violet-color);
+}
+
+.contact-btn {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contact-reset,
+.contact-submit {
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  font-family: "Kalam", cursive;
+  color: var(--primary-violet-color);
+}
