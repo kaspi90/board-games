@@ -6,10 +6,12 @@ function BoardgameCard(props) {
   console.log(text);
 
   return (
+    // REVIEW: Overall this is very well implemented the variable identifier is well implemented
     <div className="main-container-games">
       <div className="boardgame-header">
         <div>
           <h1 className="main-games-name">
+            {/* REVIEW: nice use of the ternary operator */}
             {Array.isArray(props.game.name)
               ? props.game.name[0]._attributes.value
               : props.game.name?._attributes.value}
@@ -33,6 +35,7 @@ function BoardgameCard(props) {
       </div>
 
       <p className="boardgame-description">
+        {/* REVIEW: great use of REGEX */}
         {text !== undefined ? text.replace(/&#10;|&mdash;|#15/g, " ") : ""}
       </p>
     </div>

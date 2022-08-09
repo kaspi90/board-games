@@ -11,9 +11,12 @@ function GamesSearch() {
   const [games, setBoardgames] = React.useState([]);
   const [id, setId] = React.useState([]);
   const [selects, setSelects] = React.useState([]);
+
+  // REVIEW: Great use of useParams
   let urlParamId = useParams().id;
 
   React.useEffect(() => {
+    // REVIEW: great error handling if there is no urlParam
     console.log("urlParamId: ", urlParamId);
     if (urlParamId !== undefined) {
       fetchgames(urlParamId);
@@ -21,6 +24,7 @@ function GamesSearch() {
     }
   }, [urlParamId]);
 
+  // REVIEW: Great implementation to fetch the game by id 
   React.useEffect(() => {
     if (gameName.length > 0) {
       fetchid(gameName);
@@ -29,6 +33,7 @@ function GamesSearch() {
     }
   }, [gameName]);
 
+  // REVIEW: great way to handle the enter key
   const handleKeyDown = (event) => {
     if (event.keyCode === 13) {
       setInput(event.target.value);
@@ -98,3 +103,5 @@ function GamesSearch() {
 }
 
 export default GamesSearch;
+// REVIEW: overall this component is well implemented and clear to follow.
+// I suggest moving all of the useEffects to the top of the file and the functions below

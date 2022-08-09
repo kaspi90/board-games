@@ -10,10 +10,12 @@ function App() {
   return (
     <BrowserRouter>
       <div className="container">
+        {/* REVIEW: Good use of using the header inside the router but not in the routes */}
         <Header />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route exact path="/boardgames" element={<GamesSearch />} />
+          {/* REVIEW: nice use of route params */}
           <Route path="/boardgames/:id" element={<GamesSearch />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

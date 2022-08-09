@@ -1,3 +1,4 @@
+/* REVIEW: give each a element a class to avoid possible css overrides from other files */
 a {
   color: var(--primary-violet-color);
   font-family: "Kalam", cursive;

@@ -3,6 +3,7 @@ import "./Header.css";
 
 function Header() {
   return (
+    // REVIEW: great use of the navbar links from react router to avoid page refresh
     <nav className="navbar">
       <Link to="/">
         <h1 className="navbar-logo">Board Games</h1>

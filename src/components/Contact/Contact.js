@@ -8,6 +8,7 @@ function Contact() {
     message: "",
   });
 
+  // REVIEW: great setup of handleChange
   const handleChange = (event) => {
     const inputName = event.target.name;
     const inputValue = event.target.value;
@@ -17,9 +18,13 @@ function Contact() {
     };
     setContactInfo(newContactInfo);
   };
+
+  // REVIEW: this could be used later on to send the info to the api
   const handleSubmit = (event) => {
     event.preventDefault();
   };
+
+  // REVIEW: Great implementation of the handleReset
   const handleReset = () => {
     setContactInfo({ firstName: "", lastName: "", message: "" });
     console.log(contactInfo);
@@ -53,6 +58,7 @@ function Contact() {
           className="contact-message"
           name="message"
           placeholder="Message"
+          // REVIEW: great implementation of the inputs by giving them a name, value and use the same onChange
           value={contactInfo.message}
           onChange={handleChange}
           required
@@ -63,6 +69,8 @@ function Contact() {
             className="contact-submit"
             type="submit"
             value="Submit"
+            // REVIEW: I suggest putting the onSubmit on the form itself as it 
+            // can have some strange side effects if it is on the button
             onSubmit={handleSubmit}
           />
         </div>

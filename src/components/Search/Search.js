@@ -9,6 +9,7 @@ function Search(props) {
         type="text"
         name="search-bg"
         placeholder="search board games"
+        // REVIEW: Good use of passing down a function as props to lift up the state
         onKeyDown={props.onkeydown}
       />
     </div>

@@ -9,6 +9,7 @@ function Homepage() {
   const [bgames, setGames] = React.useState([]);
   const [idGame, setIdgame] = React.useState([]);
   React.useEffect(() => {
+    // REVIEW: put this api call into a function for reusability purposes 
     axios
       .get("https://boardgamegeek.com/xmlapi2/hot?boardgame")
       .then((response) => {
@@ -18,6 +19,8 @@ function Homepage() {
         setGames(datagames.items.item);
       });
   }, []);
+  
+  // REVIEW: Great use of this function passing as props to boardgameHot component 
   const handleClick = (event) => {
     setIdgame(event.target.getAttribute("id"));
     console.log(event.target.getAttribute("id"));
